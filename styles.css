@@ -1,5 +1,6 @@
 body {
     font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
     margin: 0;
     padding: 0;
 }
@@ -41,7 +42,7 @@ li a {
 
 .hero {
     background: #1f2937;
-    padding: 1% 10%;
+    padding: 2% 10%;
     display: flex;
     justify-content: space-evenly; 
   }
@@ -69,19 +70,27 @@ li a {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
+
+.cta .button {
+    border: 3px solid #fff;
+}
   
   /* Default button color */
   .button {
-    background-color: #3498db; /* Royal blue */
-    color: #fff; /* White */
+    background-color: #3882f6;
+    color: #fff; 
     text-decoration: none;
   }
   
   /* Hover effect */
   .button:hover {
     text-decoration: underline;
-    background-color: #2980b9; /* Darker blue */
-    color: #fff; /* White */
+    background-color: #0064a7; 
+    color: #fff; 
+  }
+
+  .cta .button:hover {
+    border: 3px solid #0064a7;
   }
   
   /* Focus effect */
@@ -92,7 +101,26 @@ li a {
 
 h1 {
     font-size: 48px;
-    color: #ffffff;
+    color: #f9faf8;
+    font-weight: 800;
+    margin: 0;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+    text-align: right;
+}
+
+h4,
+.cta-text {
+    padding: 0;
     margin: 0;
 }
 
@@ -104,7 +132,61 @@ h1 {
     width: 100%
 }
 
+.container {
+    margin: 0;
+    padding: 2% 10%;
+}
 
+
+.four-image {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    padding: 1%;
+    flex-wrap: wrap;
+    text-align: center;
+    color:#1f2937;
+    padding: 2%;
+}
+
+.smaller-image {
+   border: 5px solid #3882f6; 
+   border-radius: 15px;
+}
+
+.quote-banner {
+    background: #e5e7eb;
+    margin: 0;
+    padding: 2% 20%;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.call-to-action-banner {
+    margin: 0;
+    padding: 5% 10%;
+}
+
+.cta {
+    display: flex;
+    background: #3882f6;
+    padding: 2% 10%;
+    justify-content: space-between;
+    color: #f9faf8;
+    border-radius: 15px;
+    align-items: center;
+}
 
 footer {
     height: 72px;
